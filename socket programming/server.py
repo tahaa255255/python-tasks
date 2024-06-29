@@ -9,7 +9,7 @@ print("connection esablished from ip:",cleint_ip_port[0],"and port:",cleint_ip_p
 print("recevied data :")
 while True:
     recv_data=cleint_socket.recv(1024)
-    cleint_socket.send("hello".encode("utf-8"))
+    cleint_socket.send("data sent".encode("utf-8"))
     print(recv_data.decode("utf-8"))
 
 
